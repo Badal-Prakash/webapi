@@ -1,0 +1,15 @@
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/MyfirstApi
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/appsettings.Development.json
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/appsettings.json
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/MyfirstApi.dll
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/MyfirstApi.deps.json
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/MyfirstApi.runtimeconfig.json
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/MyfirstApi.pdb
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/Microsoft.AspNetCore.OpenApi.dll
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/Microsoft.EntityFrameworkCore.dll
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/Microsoft.EntityFrameworkCore.InMemory.dll
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/Microsoft.OpenApi.dll
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/Swashbuckle.AspNetCore.Swagger.dll
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/badal/Projects/MyfirstApi/MyfirstApi/obj/Release/net7.0/PubTmp/Out/Swashbuckle.AspNetCore.SwaggerUI.dll

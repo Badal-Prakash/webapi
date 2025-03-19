@@ -5,9 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyfirstApi.Models;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace MyfirstApi.Controllers
 {
     [Route("api/[controller]")]
@@ -21,18 +18,19 @@ namespace MyfirstApi.Controllers
             _context.Database.EnsureCreated();
         }
 
-        [HttpGet] 
-        public async Task<ActionResult> GetProducts()
+        [HttpGet]
+        public async Task<ActionResult> GetProducts([FromQuery] QueryParameter queryParameter)
         {
-            var products= await _context.products.ToArrayAsync();
-            return Ok(products);
+            IQueryable<Product> products = _context.products;
+            products = products.Skip(queryParameter.Size * (queryParameter.Page - 1)).Take(queryParameter.Size);
+            return Ok(await products.ToArrayAsync());
         }
         [HttpGet]
         [Route("{id}")]
         public async Task<ActionResult> GetProductById(int id)
         {
             var product = await _context.products.FindAsync(id);
-            if(product==null)
+            if (product == null)
             {
                 return NotFound();
             }
@@ -58,7 +56,7 @@ namespace MyfirstApi.Controllers
         }
         [HttpPut]
         [Route("{id}")]
-        public async Task<ActionResult<Product>> PutProduct(int id,Product product)
+        public async Task<ActionResult<Product>> PutProduct(int id, Product product)
         {
             if (id != product.Id)
             {
@@ -88,7 +86,7 @@ namespace MyfirstApi.Controllers
         [Route("{id}")]
         public async Task<ActionResult<Product>> DeleteProduct(int id)
         {
-            var product = _context.products.Find(id);
+            var product = await _context.products.FindAsync(id);
             if (product == null)
             {
                 return NotFound();
